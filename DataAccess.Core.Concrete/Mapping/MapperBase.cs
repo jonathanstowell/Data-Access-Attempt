@@ -8,7 +8,7 @@ namespace DataAccess.Core.Concrete.Mapping
 {
     public abstract class MapperBase<T> : IMapper<T> where T : class, new() 
     {
-        protected abstract T Map(IDataRecord record);
+        public abstract T Map(IDataRecord record);
 
         public T MapSingle(IDataReader reader)
         {

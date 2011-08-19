@@ -15,7 +15,7 @@ namespace DataAccess.Mapping.Mappers
             _columnProvider = columnProvider;
         }
 
-        protected override Person Map(IDataRecord record)
+        public override Person Map(IDataRecord record)
         {
             try
             {

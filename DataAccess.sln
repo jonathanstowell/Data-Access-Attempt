@@ -29,6 +29,10 @@ Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "DataAccess.Database", "Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Tests", "DataAccess.Tests\DataAccess.Tests.csproj", "{FC7ADA2C-3256-42CA-8D2A-6F9E39285C68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Param.Helpers.Abstract", "DataAccess.Param.Helpers.Abstract\DataAccess.Param.Helpers.Abstract.csproj", "{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Param.Helpers.Concrete", "DataAccess.Param.Helpers.Concrete\DataAccess.Param.Helpers.Concrete.csproj", "{765A43BF-2932-48DD-82E9-13DFE3CF9330}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{FC7ADA2C-3256-42CA-8D2A-6F9E39285C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC7ADA2C-3256-42CA-8D2A-6F9E39285C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC7ADA2C-3256-42CA-8D2A-6F9E39285C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765A43BF-2932-48DD-82E9-13DFE3CF9330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765A43BF-2932-48DD-82E9-13DFE3CF9330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765A43BF-2932-48DD-82E9-13DFE3CF9330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765A43BF-2932-48DD-82E9-13DFE3CF9330}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿using System.Data;
-using System.Data.SqlClient;
 using DataAccess.ColumnProvider.Abstract;
+using DataAccess.Param.Helpers.Abstract;
 using DataAccess.Param.Repositories.Abstract;
 
 namespace DataAccess.Param.Repositories.Concrete
@@ -8,42 +8,32 @@ namespace DataAccess.Param.Repositories.Concrete
     public class PersonParamRepository : IPersonParamRepository
     {
         private readonly IPersonColumnProvider _columnProvider;
+        private readonly IDataParamHelper _dataParamHelper;
 
-        public PersonParamRepository(IPersonColumnProvider columnProvider)
+        public PersonParamRepository(IPersonColumnProvider columnProvider, IDataParamHelper dataParamHelper)
         {
             _columnProvider = columnProvider;
+            _dataParamHelper = dataParamHelper;
         }
 
         public IDataParameter GetPersonIdParam(int id)
         {
-            IDataParameter dataParameter = new SqlParameter();
-            dataParameter.ParameterName = _columnProvider.PersonID;
-            dataParameter.Value = id;
-            return dataParameter;
+            return _dataParamHelper.BuildDataParameter(DbType.Int32, _columnProvider.PersonID, id);
         }
 
         public IDataParameter GetFirstNameParam(string firstName)
         {
-            IDataParameter dataParameter = new SqlParameter();
-            dataParameter.ParameterName = _columnProvider.FirstName;
-            dataParameter.Value = firstName;
-            return dataParameter;
+            return _dataParamHelper.BuildDataParameter(DbType.String, _columnProvider.FirstName, firstName);
         }
 
         public IDataParameter GetLastNameParam(string lastName)
         {
-            IDataParameter dataParameter = new SqlParameter();
-            dataParameter.ParameterName = _columnProvider.LastName;
-            dataParameter.Value = lastName;
-            return dataParameter;
+            return _dataParamHelper.BuildDataParameter(DbType.String, _columnProvider.LastName, lastName);
         }
 
         public IDataParameter GetEmailParam(string email)
         {
-            IDataParameter dataParameter = new SqlParameter();
-            dataParameter.ParameterName = _columnProvider.Email;
-            dataParameter.Value = email;
-            return dataParameter;
+            return _dataParamHelper.BuildDataParameter(DbType.String, _columnProvider.Email, email);
         }
     }
 }

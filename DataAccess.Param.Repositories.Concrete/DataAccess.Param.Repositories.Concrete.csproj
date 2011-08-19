@@ -41,12 +41,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PersonParamRepository.cs" />
+    <Compile Include="PostParamRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess.ColumnProvider.Abstract\DataAccess.ColumnProvider.Abstract.csproj">
       <Project>{A229AD48-4B66-4B33-A0C9-4BF26E626038}</Project>
       <Name>DataAccess.ColumnProvider.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Param.Helpers.Abstract\DataAccess.Param.Helpers.Abstract.csproj">
+      <Project>{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}</Project>
+      <Name>DataAccess.Param.Helpers.Abstract</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataAccess.Param.Repositories.Abstract\DataAccess.Param.Repositories.Abstract.csproj">
       <Project>{26561F0B-4B31-493E-AC8C-D4B7B7DD8DE4}</Project>

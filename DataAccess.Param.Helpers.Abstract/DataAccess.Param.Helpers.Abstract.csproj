@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{87EDB68D-60F2-48E7-BCD4-F59FFF5461F5}</ProjectGuid>
+    <ProjectGuid>{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess.Repositories.Abstract</RootNamespace>
-    <AssemblyName>DataAccess.Repositories.Abstract</AssemblyName>
+    <RootNamespace>DataAccess.Param.Helpers.Abstract</RootNamespace>
+    <AssemblyName>DataAccess.Param.Helpers.Abstract</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,19 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPersonRepository.cs" />
-    <Compile Include="IPostRepository.cs" />
+    <Compile Include="IDataParamHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataAccess.Core.Abstract\DataAccess.Core.Abstract.csproj">
-      <Project>{6D80CBDA-BF83-4BC4-AEAA-5A2D066C435E}</Project>
-      <Name>DataAccess.Core.Abstract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj">
-      <Project>{731053E5-8F84-4E27-945E-9C522527E702}</Project>
-      <Name>DataAccess.Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
