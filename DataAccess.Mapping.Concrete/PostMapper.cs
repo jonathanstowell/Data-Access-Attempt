@@ -1,19 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
 using DataAccess.ColumnProvider.Abstract;
 using DataAccess.Core.Abstract;
 using DataAccess.Core.Concrete.Mapping;
-using DataAccess.Entities;
+using DataAccess.Entities.Concrete;
 
-namespace DataAccess.Mapping.Mappers
+namespace DataAccess.Mapping.Concrete
 {
     public class PostMapper : MapperBase<Post>
     {
         private readonly IMapper<Person> _personMapper;
         private readonly IPostColumnProvider _columnProvider;
+
+        public PostMapper(IPostColumnProvider columnProvider)
+        {
+            _columnProvider = columnProvider;
+        }
 
         public PostMapper(IPostColumnProvider columnProvider, IMapper<Person> personMapper)
         {
@@ -30,7 +32,9 @@ namespace DataAccess.Mapping.Mappers
                 p.PostId = (DBNull.Value == record[_columnProvider.PostId]) ? 0 : (int)record[_columnProvider.PostId];
                 p.Content = (DBNull.Value == record[_columnProvider.Content]) ? string.Empty : (string)record[_columnProvider.Content];
                 p.CreatedDateTime = (DBNull.Value == record[_columnProvider.CreatedDateTime]) ? new DateTime() : (DateTime)record[_columnProvider.CreatedDateTime];
-                p.Creator = _personMapper.Map(record);
+                
+                if (_personMapper != null)
+                    p.Creator = _personMapper.Map(record);
 
                 return p;
             }

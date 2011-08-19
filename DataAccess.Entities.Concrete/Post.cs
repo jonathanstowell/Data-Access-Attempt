@@ -1,11 +1,12 @@
 ﻿using System;
+using DataAccess.Entities.Abstract;
 
-namespace DataAccess.Entities
+namespace DataAccess.Entities.Concrete
 {
-    public class Post
+    public class Post : IPost
     {
         public int PostId { get; set; }
-        public Person Creator { get; set; }
+        public IPerson Creator { get; set; }
         public string Content { get; set; }
         public DateTime CreatedDateTime { get; set; }
     }

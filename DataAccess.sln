@@ -1,10 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Mapping", "DataAccess.Mapping\DataAccess.Mapping.csproj", "{C25AD794-A053-4989-9E86-6695EC8375B7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Entities", "DataAccess.Entities\DataAccess.Entities.csproj", "{731053E5-8F84-4E27-945E-9C522527E702}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Repositories.Concrete", "DataAccess.Repositories.Concrete\DataAccess.Repositories.Concrete.csproj", "{18ECAE8E-266E-4754-9BB2-29A583672904}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Repositories.Abstract", "DataAccess.Repositories.Abstract\DataAccess.Repositories.Abstract.csproj", "{87EDB68D-60F2-48E7-BCD4-F59FFF5461F5}"
@@ -33,20 +29,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Param.Helpers.Ab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Param.Helpers.Concrete", "DataAccess.Param.Helpers.Concrete\DataAccess.Param.Helpers.Concrete.csproj", "{765A43BF-2932-48DD-82E9-13DFE3CF9330}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Entities.Abstract", "DataAccess.Entities.Abstract\DataAccess.Entities.Abstract.csproj", "{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Entities.Concrete", "DataAccess.Entities.Concrete\DataAccess.Entities.Concrete.csproj", "{731053E5-8F84-4E27-945E-9C522527E702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Mapping.Concrete", "DataAccess.Mapping.Concrete\DataAccess.Mapping.Concrete.csproj", "{C25AD794-A053-4989-9E86-6695EC8375B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C25AD794-A053-4989-9E86-6695EC8375B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C25AD794-A053-4989-9E86-6695EC8375B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C25AD794-A053-4989-9E86-6695EC8375B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C25AD794-A053-4989-9E86-6695EC8375B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{731053E5-8F84-4E27-945E-9C522527E702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{731053E5-8F84-4E27-945E-9C522527E702}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{731053E5-8F84-4E27-945E-9C522527E702}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{731053E5-8F84-4E27-945E-9C522527E702}.Release|Any CPU.Build.0 = Release|Any CPU
 		{18ECAE8E-266E-4754-9BB2-29A583672904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{18ECAE8E-266E-4754-9BB2-29A583672904}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18ECAE8E-266E-4754-9BB2-29A583672904}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -105,6 +99,18 @@ Global
 		{765A43BF-2932-48DD-82E9-13DFE3CF9330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765A43BF-2932-48DD-82E9-13DFE3CF9330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765A43BF-2932-48DD-82E9-13DFE3CF9330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{731053E5-8F84-4E27-945E-9C522527E702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{731053E5-8F84-4E27-945E-9C522527E702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{731053E5-8F84-4E27-945E-9C522527E702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{731053E5-8F84-4E27-945E-9C522527E702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25AD794-A053-4989-9E86-6695EC8375B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25AD794-A053-4989-9E86-6695EC8375B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25AD794-A053-4989-9E86-6695EC8375B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25AD794-A053-4989-9E86-6695EC8375B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

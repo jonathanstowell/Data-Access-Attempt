@@ -73,13 +73,17 @@
       <Project>{6B2218E1-7996-4EF6-8599-9C5AED9E0E4C}</Project>
       <Name>DataAccess.Core.Concrete</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj">
-      <Project>{731053E5-8F84-4E27-945E-9C522527E702}</Project>
-      <Name>DataAccess.Entities</Name>
+    <ProjectReference Include="..\DataAccess.Entities.Abstract\DataAccess.Entities.Abstract.csproj">
+      <Project>{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}</Project>
+      <Name>DataAccess.Entities.Abstract</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccess.Mapping\DataAccess.Mapping.csproj">
+    <ProjectReference Include="..\DataAccess.Entities.Concrete\DataAccess.Entities.Concrete.csproj">
+      <Project>{731053E5-8F84-4E27-945E-9C522527E702}</Project>
+      <Name>DataAccess.Entities.Concrete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Mapping.Concrete\DataAccess.Mapping.Concrete.csproj">
       <Project>{C25AD794-A053-4989-9E86-6695EC8375B7}</Project>
-      <Name>DataAccess.Mapping</Name>
+      <Name>DataAccess.Mapping.Concrete</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataAccess.Param.Helpers.Abstract\DataAccess.Param.Helpers.Abstract.csproj">
       <Project>{63DBA314-3C84-4AA5-BB01-4B0B1C1DBE19}</Project>

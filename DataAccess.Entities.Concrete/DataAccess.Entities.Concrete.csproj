@@ -8,8 +8,8 @@
     <ProjectGuid>{731053E5-8F84-4E27-945E-9C522527E702}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess.Entities</RootNamespace>
-    <AssemblyName>DataAccess.Entities</AssemblyName>
+    <RootNamespace>DataAccess.Entities.Concrete</RootNamespace>
+    <AssemblyName>DataAccess.Entities.Concrete</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,6 +43,12 @@
     <Compile Include="Person.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess.Entities.Abstract\DataAccess.Entities.Abstract.csproj">
+      <Project>{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}</Project>
+      <Name>DataAccess.Entities.Abstract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

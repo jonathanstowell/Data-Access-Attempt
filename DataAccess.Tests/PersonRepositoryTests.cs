@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using DataAccess.ColumnProvider.Concrete;
 using DataAccess.Core.Concrete.Infrastructure;
-using DataAccess.Entities;
-using DataAccess.Mapping.Mappers;
+using DataAccess.Entities.Concrete;
+using DataAccess.Mapping.Concrete;
 using DataAccess.Param.Helpers.Concrete;
 using DataAccess.Param.Repositories.Concrete;
 using DataAccess.Repositories.Abstract;
@@ -23,7 +23,9 @@ namespace DataAccess.Tests
         {
             var dbFactory = new DatabaseFactory();
             var columnProvider = new PersonColumnProvider();
-            var mapper = new PersonMapper(columnProvider);
+            var postColumnProvider = new PostColumnProvider();
+            var postMapper = new PostMapper(postColumnProvider);
+            var mapper = new PersonMapper(columnProvider, postColumnProvider, postMapper);
             var helper = new DataParamHelper();
             var paramRepository = new PersonParamRepository(columnProvider, helper);
             var collectionRepository = new PersonParamCollectionRepository(paramRepository);

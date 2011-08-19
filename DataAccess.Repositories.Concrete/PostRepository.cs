@@ -2,7 +2,7 @@
 using System.Data;
 using DataAccess.Core.Abstract;
 using DataAccess.Core.Concrete.Infrastructure;
-using DataAccess.Entities;
+using DataAccess.Entities.Concrete;
 using DataAccess.ParamCollection.Repositories.Abstract;
 using DataAccess.Repositories.Abstract;
 

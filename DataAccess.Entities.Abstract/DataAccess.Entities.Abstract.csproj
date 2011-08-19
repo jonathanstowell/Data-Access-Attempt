@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C25AD794-A053-4989-9E86-6695EC8375B7}</ProjectGuid>
+    <ProjectGuid>{74F3E0FE-FB8A-419E-BD1B-97309F7AB331}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess.Mapping</RootNamespace>
-    <AssemblyName>DataAccess.Mapping</AssemblyName>
+    <RootNamespace>DataAccess.Entities.Abstract</RootNamespace>
+    <AssemblyName>DataAccess.Entities.Abstract</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,27 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mappers\PersonMapper.cs" />
-    <Compile Include="Mappers\PostMapper.cs" />
+    <Compile Include="IPerson.cs" />
+    <Compile Include="IPost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataAccess.ColumnProvider.Abstract\DataAccess.ColumnProvider.Abstract.csproj">
-      <Project>{A229AD48-4B66-4B33-A0C9-4BF26E626038}</Project>
-      <Name>DataAccess.ColumnProvider.Abstract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess.Core.Abstract\DataAccess.Core.Abstract.csproj">
-      <Project>{6D80CBDA-BF83-4BC4-AEAA-5A2D066C435E}</Project>
-      <Name>DataAccess.Core.Abstract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess.Core.Concrete\DataAccess.Core.Concrete.csproj">
-      <Project>{6B2218E1-7996-4EF6-8599-9C5AED9E0E4C}</Project>
-      <Name>DataAccess.Core.Concrete</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj">
-      <Project>{731053E5-8F84-4E27-945E-9C522527E702}</Project>
-      <Name>DataAccess.Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

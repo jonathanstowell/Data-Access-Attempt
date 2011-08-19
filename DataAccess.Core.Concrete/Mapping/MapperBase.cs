@@ -22,7 +22,7 @@ namespace DataAccess.Core.Concrete.Mapping
             return item;
         }
 
-        public ICollection<T> MapCollection(IDataReader reader)
+        public virtual ICollection<T> MapCollection(IDataReader reader)
         {
             ICollection<T> collection = new Collection<T>();
 

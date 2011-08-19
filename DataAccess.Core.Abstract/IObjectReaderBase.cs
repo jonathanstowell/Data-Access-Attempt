@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Data;
-using DataAccess.Core.Abstract;
 
 namespace DataAccess.Core.Abstract
 {
