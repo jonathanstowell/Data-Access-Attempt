@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC7ADA2C-3256-42CA-8D2A-6F9E39285C68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess.Tests</RootNamespace>
+    <AssemblyName>DataAccess.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="pnunit.framework, Version=1.0.4109.34242, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PersonRepositoryTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess.ColumnProvider.Abstract\DataAccess.ColumnProvider.Abstract.csproj">
+      <Project>{A229AD48-4B66-4B33-A0C9-4BF26E626038}</Project>
+      <Name>DataAccess.ColumnProvider.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.ColumnProvider.Concrete\DataAccess.ColumnProvider.Concrete.csproj">
+      <Project>{0F4432C8-26C6-4843-A075-C9AC74F0A79B}</Project>
+      <Name>DataAccess.ColumnProvider.Concrete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Core.Abstract\DataAccess.Core.Abstract.csproj">
+      <Project>{6D80CBDA-BF83-4BC4-AEAA-5A2D066C435E}</Project>
+      <Name>DataAccess.Core.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Core.Concrete\DataAccess.Core.Concrete.csproj">
+      <Project>{6B2218E1-7996-4EF6-8599-9C5AED9E0E4C}</Project>
+      <Name>DataAccess.Core.Concrete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Entities\DataAccess.Entities.csproj">
+      <Project>{731053E5-8F84-4E27-945E-9C522527E702}</Project>
+      <Name>DataAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Mapping\DataAccess.Mapping.csproj">
+      <Project>{C25AD794-A053-4989-9E86-6695EC8375B7}</Project>
+      <Name>DataAccess.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Param.Repositories.Abstract\DataAccess.Param.Repositories.Abstract.csproj">
+      <Project>{26561F0B-4B31-493E-AC8C-D4B7B7DD8DE4}</Project>
+      <Name>DataAccess.Param.Repositories.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Param.Repositories.Concrete\DataAccess.Param.Repositories.Concrete.csproj">
+      <Project>{A02CE04E-5AA2-4EE4-A652-10CD00A3711C}</Project>
+      <Name>DataAccess.Param.Repositories.Concrete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.ParamCollection.Repositories.Abstract\DataAccess.ParamCollection.Repositories.Abstract.csproj">
+      <Project>{68C00E46-1BE4-48EB-83EB-CFEB9D9A6898}</Project>
+      <Name>DataAccess.ParamCollection.Repositories.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.ParamCollection.Repositories.Concrete\DataAccess.ParamCollection.Repositories.Concrete.csproj">
+      <Project>{EA9FADFB-CF30-45E1-9184-474A487EC457}</Project>
+      <Name>DataAccess.ParamCollection.Repositories.Concrete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Repositories.Abstract\DataAccess.Repositories.Abstract.csproj">
+      <Project>{87EDB68D-60F2-48E7-BCD4-F59FFF5461F5}</Project>
+      <Name>DataAccess.Repositories.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Repositories.Concrete\DataAccess.Repositories.Concrete.csproj">
+      <Project>{18ECAE8E-266E-4754-9BB2-29A583672904}</Project>
+      <Name>DataAccess.Repositories.Concrete</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
